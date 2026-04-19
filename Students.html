@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Students.css">
+    <title>Ishraq System - Students</title>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Students</h1>
+        <span class="subtitle">Ishraq System · School Registration &amp; Guardian Management</span>
+    </div>
+
+    <!-- Layout -->
+    <div class="layout">
+
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <a href="Dashboard.html">Dashboard</a>
+            <a href="#" class="active">Students</a>
+            <a href="#">Guardians</a>
+            <a href="#">Search</a>
+            <a href="#">Insert</a>
+            <a href="#">Reports</a>
+            <a href="#">Settings</a>
+        </nav>
+
+        <!-- Main -->
+        <div class="main">
+            <div class="form-card">
+                <h2>Student Insert Form</h2>
+
+                <form action="#" method="post">
+                    <div class="form-grid">
+
+                        <div class="field">
+                            <label for="student-id">Student ID</label>
+                            <input type="text" id="student-id" name="student_id" />
+                        </div>
+
+                        <div class="field">
+                            <label for="student-code">Student Code</label>
+                            <input type="text" id="student-code" name="student_code" />
+                        </div>
+
+                        <div class="field">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first_name" />
+                        </div>
+
+                        <div class="field">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last_name" />
+                        </div>
+
+                        <div class="field">
+                            <label for="dob">Date of Birth</label>
+                            <input type="text" id="dob" name="dob" />
+                        </div>
+
+                        <div class="field">
+                            <label for="gender">Gender</label>
+                            <input type="text" id="gender" name="gender" />
+                        </div>
+
+                        <div class="field">
+                            <label for="nationality">Nationality</label>
+                            <input type="text" id="nationality" name="nationality" />
+                        </div>
+
+                        <div class="field">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="address" />
+                        </div>
+
+                    </div>
+
+                    <div class="btn-row">
+                        <button type="submit" class="btn-save">Save Student</button>
+                        <button type="reset" class="btn-clear">Clear</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

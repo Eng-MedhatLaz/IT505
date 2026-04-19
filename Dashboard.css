@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #eef2f7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ── Header ── */
+.header {
+    background: #1565c0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 46px;
+}
+
+.header h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.header .subtitle {
+    font-size: 12px;
+    opacity: 0.88;
+}
+
+/* ── Layout ── */
+.layout {
+    display: flex;
+    flex: 1;
+}
+
+/* ── Sidebar ── */
+.sidebar {
+    width: 140px;
+    background: #fff;
+    border-right: 1px solid #dde3ea;
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 9px 18px;
+    font-size: 14px;
+    color: #2c3e50;
+    text-decoration: none;
+    border-left: 3px solid transparent;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.sidebar a:hover {
+    background: #e8f0fe;
+    border-left-color: #1565c0;
+    color: #1565c0;
+}
+
+.sidebar a.active {
+    background: #1565c0;
+    color: #fff;
+    border-left-color: #0d47a1;
+    font-weight: 600;
+}
+
+/* ── Main ── */
+.main {
+    flex: 1;
+    padding: 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ── Stat Cards ── */
+.stats-row {
+    display: flex;
+    gap: 16px;
+}
+
+.stat-card {
+    background: #fff;
+    border: 1px solid #dde3ea;
+    border-radius: 8px;
+    padding: 16px 36px;
+    min-width: 140px;
+}
+
+.stat-card .label {
+    font-size: 13px;
+    color: #607080;
+    margin-bottom: 6px;
+}
+
+.stat-card .value {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1565c0;
+    letter-spacing: -0.5px;
+}
+
+/* ── Bottom Row ── */
+.bottom-row {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* ── Recent Students Table ── */
+.table-card {
+    background: #fff;
+    border: 1px solid #dde3ea;
+    border-radius: 8px;
+    padding: 39px 22px;
+    flex: 1.4;
+}
+
+.table-card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 5px;
+}
+
+.students-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+}
+
+.students-table thead tr {
+    border-bottom: 2px solid #e0e7ef;
+}
+
+.students-table th {
+    text-align: left;
+    padding: 6px 10px 8px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #1565c0;
+}
+
+.students-table tbody tr {
+    border-bottom: 1px solid #f0f4f8;
+    transition: background 0.12s;
+}
+
+.students-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.students-table tbody tr:hover {
+    background: #f5f8ff;
+}
+
+.students-table td {
+    padding: 10px 10px;
+    color: #2c3e50;
+}
+
+/* ── Quick Actions ── */
+.actions-card {
+    background: #fff;
+    border: 1px solid #dde3ea;
+    border-radius: 8px;
+    padding: 20px 22px;
+    flex: 1;
+}
+
+.actions-card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 14px;
+}
+
+.actions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.action-btn {
+    display: block;
+    width: 100%;
+    padding: 9px 0;
+    background: #dbeafe;
+    color: #1565c0;
+    font-size: 13.5px;
+    font-weight: 600;
+    border: 1px solid #b8d4f5;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.15s, transform 0.1s;
+}
+
+.action-btn:hover {
+    background: #bfdbfe;
+}
+
+.action-btn:active {
+    transform: scale(0.98);
+}
+
+.action-btn.danger {
+    background: #fee2e2;
+    color: #b91c1c;
+    border-color: #fca5a5;
+}
+
+.action-btn.danger:hover {
+    background: #fecaca;
+}
